@@ -11,3 +11,9 @@ class ProductForm(forms.ModelForm):
             'description',
             'price'
         }
+
+  
+class RowProductForm(forms.Form):
+    title = forms.CharField()
+    description = forms.CharField()
+    price = forms.DecimalField()
